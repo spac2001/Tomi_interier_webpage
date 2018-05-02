@@ -12,23 +12,80 @@ html {
     background-color: #fff;
     color: #5f5f5f;
     font-family: 'Roboto Condensed', 'Arial', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
 }
 
+section {
+    padding: 80px 0;
+}
 
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.clearfix {zoom: 1,}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/* Headings */
+
+h1 {
+    color: #fff;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom; 20px;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 300;
+    margin-top: 0;
+    font-size: 180%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
 
 /*----------------------------------------- */
 /* HEADER */
 /*------------------------------------------*/
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7), url(img/wood.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/wood.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
     background-attachment: fixed;
+}
+
+.main_text {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
 }
 
 /* Main Nav */
@@ -57,9 +114,116 @@ header {
 
 .main_nav li a:hover,
 .main_nav li a:active {
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #e67e22;
 }
 
 
+/* Buttons */
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 40px;
+    font-weight: 300;
+    border-radius: 200px;
+}
 
 
+.btn_full:link,
+.btn_full:visited {
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    color: #fff;
+}
+
+.btn_ghost:link,
+.btn_ghost:visited {
+    border: 1px solid #e67e22;
+    color: #e67e22;
+}
+
+.btn:hover,
+.btn:active {
+   background-color: #cf6d17; 
+}
+
+.btn_full:hover,
+.btn_full:active {
+    border: 1px solid #cf6d17;
+}
+
+.btn_ghost:hover,
+.btn_ghost:active {
+    border: 1px solid #cf6d17;
+    color: #fff;
+}
+
+.tomas_foto img {
+    height: 180px;
+    border-radius: 50%;
+    display: block;
+    margin: 60px auto;
+    border: 2px solid transparent;
+    padding: 10px;
+    transition: border 0.5s;
+}
+
+.tomas_foto img:hover {
+    border: 2px solid #e67e22;
+}
+
+.full_info {
+    text-align: center;
+    margin: 30px 0;
+    margin-bottom: 60px;
+    font-size: 120%;
+}
+
+/*----------------------------------------- */
+/* FURNITURE SHOWCASE */
+/*------------------------------------------*/
+
+.section_furniture {
+    padding: 0;
+}
+
+.furniture_showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.furniture_showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+    padding: 0;
+}
+
+.furniture_photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.furniture_photo img {
+    opacity: 0.75;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.furniture_photo img:hover {
+    transform: scale(1.03);
+    opacity: 1;
+}
+
+/*----------------------------------------- */
+/* TESTIMONIALS */
+/*------------------------------------------*/
+
+.section_testimonials {
+    background-color: #f4f4f4;
+}
