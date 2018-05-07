@@ -68,6 +68,13 @@ h2:after {
     margin-top: 30px;
 }
 
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 120%;
+}
+
 /*----------------------------------------- */
 /* HEADER */
 /*------------------------------------------*/
@@ -226,4 +233,44 @@ header {
 
 .section_testimonials {
     background-color: #f4f4f4;
+}
+
+blockquote {
+    padding: 2% 5%;
+    position: relative;
+    line-height: 145%;
+    margin-top: 40px;
+    font-style: italic;
+    
+}
+
+blockquote:before {
+    content: "\201C";
+    font-size: 400%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+
+cite {
+    display: block;
+    margin-top: 25px;
+    font-size: 90%;
+    
+}
+
+cite img {
+    height: 90px;
+    border-radius: 50%;
+    vertical-align: middle;  
+}
+
+/*----------------------------------------- */
+/* PRODUCTION */
+/*------------------------------------------*/
+
+
+.box {
+    padding: 1% 6%;
 }
