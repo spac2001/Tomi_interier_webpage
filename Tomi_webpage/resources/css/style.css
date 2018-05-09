@@ -35,7 +35,7 @@ section {
     visibility: hidden;
 }
 
-/* Headings */
+/* ------ HEADINGS ----- */
 
 h1 {
     color: #fff;
@@ -73,6 +73,15 @@ h3 {
     text-transform: uppercase;
     margin-bottom: 20px;
     font-size: 120%;
+}
+
+/* ------ ICONS ----- */
+
+.icon_big {
+    font-size: 300%;
+    color: #e67e22;
+    display: block;
+    margin-bottom: 10px;
 }
 
 /*----------------------------------------- */
@@ -232,7 +241,14 @@ header {
 /*------------------------------------------*/
 
 .section_testimonials {
-    background-color: #f4f4f4;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/workbanch.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.section_testimonials h2 {
+    color: #fff;
 }
 
 blockquote {
@@ -241,6 +257,7 @@ blockquote {
     line-height: 145%;
     margin-top: 40px;
     font-style: italic;
+    color: #fff;
     
 }
 
@@ -272,5 +289,11 @@ cite img {
 
 
 .box {
-    padding: 1% 6%;
+    padding: 2% 6%;
+    text-align: center;
+}
+
+. box p {
+    font-size: 90%;
+    line-height: 145%;
 }
