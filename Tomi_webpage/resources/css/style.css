@@ -331,3 +331,84 @@ textarea {
 textarea {
     height: 100px;
 }
+
+/*----------------------------------------- */
+/* FOOTER*/
+/*------------------------------------------*/
+
+
+footer {
+    background-color: #333;
+    padding: 50px;
+    font-size: 80%;
+}
+
+.footer_nav {
+    float: left;
+    list-style: none;
+}
+
+.footer_nav li,
+.social_links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.social_links {
+    list-style: none;
+    float: right;
+}
+
+.footer_nav li:last-child,
+.social_links li:last-child {
+    margin-right: 0px;
+}
+
+.footer_nav li a:link,
+.footer_nav li a:visited,
+.social_links li a:link,
+.social_links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    transition: color 0.2s;
+}
+
+.footer_nav li a:hover,
+.footer_nav li a:active {
+    color: #ddd;
+}
+
+.social_links li a:link,
+.social_links li a:visited {
+    font-size: 160%;
+}
+
+.ion-social-facebook,
+.ion-social-google,
+.ion-social-skype,
+.ion-social-pinterest {
+    transition: color 0.2s;
+}
+
+.ion-social-facebook:hover {
+    color: #3b5998;
+}
+
+.ion-social-google:hover {
+    color: #dd4b39;
+}
+
+.ion-social-skype:hover {
+    color: #00aff0;
+}
+
+.ion-social-pinterest:hover {
+    color: #cb2027;
+}
+
+footer p {
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
+}
