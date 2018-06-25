@@ -137,6 +137,28 @@ header {
     border-bottom: 2px solid #e67e22;
 }
 
+/* Sticky Nav */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
+}
+
+
+.sticky .main_nav {
+    margin: 18px 0;
+}
+
+.sticky .main_nav li a:link,
+.sticky .main_nav li a:visited {
+    padding: 17px 0;
+    color: #555;
+}
 
 /* Buttons */
 

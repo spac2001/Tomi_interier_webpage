@@ -33,11 +33,31 @@
     .col { width: 100%; }
     
     .main_nav { display: none; }
+    
+    h1 { font-size: 180%; }
+    h2 { font-size: 150%; }
+    
+    .footer_nav { float: none; }
+     
+    
+    .footer_nav li { margin-right: 5px; }
+    
+    .social_links { 
+        float: none;
+        margin-top: 10px;
+    
+    }
+        
 }
 
 
 
 /* Small phones: from 0 - 480px */
 @media only screen and (max-width:480px) {
+ 
+    section { padding: 25px 0 }
+    
+    .btn_ghost { margin-top: 10px; }
+    .contact_form { width: 100%; }
     
 }
