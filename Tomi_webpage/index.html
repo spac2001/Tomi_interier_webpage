@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="sk">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
-        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Tomi Interier je spolocnost zaoberajuca sa vyrobou vysoko kvalitneho nabytku namieru.">
+ 
         
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/Grid.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
         <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400" rel="stylesheet">
@@ -17,15 +19,18 @@
     </head>
    
     <body>
-        <header>
+        <header id="header">
             <nav>
                 <div class="row">
+                    <img src="resources/img/logo_white.png" alt="Tomi Interier Logo" class="logo">
+                    <img src="resources/img/logo.png" alt="Tomi Interier Logo Black" class="logo-black">
                     <ul class="main_nav js--main_nav">
-                        <li><a href="#">o mne</a></li>
-                        <li><a href="#">výroba</a></li>
-                        <li><a href="#">odporúčania</a></li>
-                        <li><a href="#">kontakt</a></li>
+                        <li><a href="#about_me">o mne</a></li>
+                        <li><a href="#production">výroba</a></li>
+                        <li><a href="#recommendation">odporúčania</a></li>
+                        <li><a href="#contact">kontakt</a></li>
                     </ul>
+                    <a class="mobil_nav_icon js--nav--icon"><i class="ion-navicon-round"></i></a>
                 </div>
             </nav>
             <div class="main_text">
@@ -35,13 +40,16 @@
             </div>
         </header>
         
-        <section class="section_about_me js--section_about_me">
+        <section class="section_about_me js--section_about_me" id="about_me">
             <div class="row">
                 <div class="tomas_foto">
                     <img src="resources/img/tomas_skovran.jpg" alt="Tomas Skovran">
                 </div>
                 <h2>Tomáš Škovran</h2>
-                <p class="full_info">Ahojte volam sa Tomas. Vyrobe nabytku a pracou s drevom sa venujem uz 10 rokov. Posobim v Spisskej Novej Vsi a okoli. Dokazem vyrobit takmer cokolvek a na mieru, vstavane skrine, kuchynske linky, specializovane kusy nabytku z MDF. Ponukam koplexny navrh, spracovanie, vyrobu a samotnu montaz. Pri vyrobe dbam na vysoku uroven kvality a dizajn.</p>      
+                <p class="full_info">Moje meno je Tomáš Škovran a výrobe nábytku sa venujem od roku 2001. Pôsobím v Spišskej Novej Vsi, avšak dodanie a montáž výrobkov kdekoľvek na Slovensku či v zahraničí je samozrejmou súčasťou mojej práce. Venujem sa výrobe nábytku na mieru v súlade so želaniami zákazníka. Špecializujem sa na kuchynské linky, vstavané skrine, šatníky, postele, chodbové steny, detské izby, obývačkové zostavy a tiež nábytok pre školy či škôlky. Časť môjho portfólia nájdete na mojom instagrame nižšie.</p>
+            </div>
+            <div class="instagram">
+                <a href="https://www.instagram.com/tomi_interier/" target="_blank"><i class="ion-social-instagram"></i></a>
             </div>
         </section>
         
@@ -92,134 +100,137 @@
             </ul>
         </section>
         
-        <section class="section_production js--section_production">
+        <section class="section_production js--section_production" id="production">
             <div class="row">
-                <h2>čo všetko vlastne robím?</h2>
+                <h2>Čo všetko ponúkam?</h2>
             </div>
-            <div class="row">
-                <div class="col span-1-of-3 box">
+            <div class="row js--wp-1">
+                <div class="col span-1-of-4 box">
                     <i class="ion-edit icon_big"></i>
                     <h3>Návrh</h3>
-                    <p>Zabezpečujem kompletný návrh riešenia na základe obhliadky. Dizajn, výber materiálu, dekoru ako aj vyzualizáciu v niekoľkých prevedeniach, pre Vašu úplnu spokojnosť.</p>
+                    <p>Zabezpečujem kompletný návrh riešenia na základe obhliadky. Dizajn, výber materiálu, dekoru ako aj 3D vyzualizáciu v niekoľkých prevedeniach, pre Vašu absolútnu spokojnosť.</p>
                 </div>
-                <div class="col span-1-of-3 box">
+                <div class="col span-1-of-4 box">
+                    <i class="ion-clock icon_big"></i>
+                    <h3>Príprava</h3>
+                    <p>Po schválení 3D návrhu prevažne pri kuchynských linkách zakreslím už na mieste, ako viesť inštalácie ako sú voda, odpad, elektrické zástrčky pre vstavané spotrebiče a tiež led osvetlenie.</p>
+                </div>
+                <div class="col span-1-of-4 box">
                     <i class="ion-hammer icon_big"></i>
                     <h3>Výroba</h3>
-                    <p>Výroba kompletného nabýtku od nárezu, cez olepenie hrán, vŕtanie, inštalácia záveskou a celková príprava nábytku pred jeho inštaláciou za použitia, moderných a kvalitných stolárských nástrojov.</p>
+                    <p>Používam len kvalitné materiály od rakúskej firmy Egger. Všetky kovania sú dodávané s doživotnou zárukou od firmy Blum (Rakúsko). Štandardne používam 2mm ABS hrany aj na korpusy skriniek, zásuviek či vnútro vstavanej skrine, čo garantuje dlhú životnosť výrobku.</p>
                 </div>
-                <div class="col span-1-of-3 box">
+                <div class="col span-1-of-4 box">
                     <i class="ion-wrench icon_big"></i>
-                    <h3>Monáž</h3>
-                    <p>Samotná finálna montáž nabýtuku u Vás doma. Príprava miesta, montáž jednotlivých komponentov, spojazndennie všetkých kovaní a kompletné odskúšanie funkčnosti.</p>
+                    <h3>Montáž</h3>
+                    <p>Samozrejmosťou je finálna montáž priamo na mieste, ktorá je v cene každej zákazky. Doprava a vynosenie jednotlivých častí nábytku, odskúšanie funkčnosti a nastavenie všetkých kovaní pri samotnej montáži.</p>
                 </div>
             </div>
         </section>
         
-        <section class="section_testimonials">
+        <section class="section_testimonials" id="recommendation">
             <div class="row">
-                <h2>Nie je nič lepšie, než spokojný zákaznik.</h2>
+                <h2>Nie je nič lepšie, než spokojný zákazník.</h2>
             </div>
             <div class="row">
                 <div class="col span-1-of-3">
                     <blockquote>
-                        U Tomáša som si nechala vyrobiť kuchynsku linku na mieru. Predčil všetky očakávania. Výborná komunikácia, prístup ako aj rýchlosť výroby a montáže. Určite to nebola posledná vec, ktoru sme si dali vyrobiť.
+                        U Tomáša som si nechala vyrobiť kuchynskú linku na mieru. Predčil všetky očakávania. Výborná komunikácia, prístup ako aj rýchlosť výroby a montáže. Určite to nebola posledná vec, ktoru sme si dali vyrobiť.
                         <cite><img src="resources/img/marcela_jurcakova.png" alt="marcela jurcakova photo">Marcela Jurčáková</cite>
                     </blockquote>
                 </div>
                     <div class="col span-1-of-3">
                         <blockquote>
-                        Tomáš nam vyrábal všetky vstavané skrine v byte. Nikdy by som nezvolil iného stolára. Jeho profesionálny prístup a precíznosť s akou pristupuje k práci by mala isť príkladom každému výrobcovi nábytku.
+                        Tomáš nám vyrábal všetky vstavané skrine v byte. Nikdy by som nezvolil iného stolára. Jeho profesionálny prístup a precíznosť s akou pristupuje k práci by mali ísť príkladom každému výrobcovi nábytku.
                             <cite><img src="resources/img/patrik_grecko.png" alt="patrik grecko photo">Patrik Grečko</cite>
                         </blockquote>
                     </div>
                     <div class="col span-1-of-3">
                         <blockquote>
-                        U Tomáša som si nechal vyrobiť kuchynskú linku. S pracou som bol spokojny od úplného začiatku až po záverečnú montáž u nás doma. Môžem povedať, že som bol so všetkým maximálne spojnokoý.
+                        U Tomáša som si nechal vyrobiť kuchynskú linku. S prácou som bol spokojny od úplného začiatku až po záverečnú montáž u nás doma. Odporúčam každému, kto ocení stolársky kumšt a prepracovanosť detailov.
                             <cite><img src="resources/img/vladimir_mulik.png" alt="vladimir mulik photo">Vladimír Mulík</cite>
                         </blockquote>
                     </div>
             </div>
         </section>
         
-        <section class="section_form js--section_form">
+        <section class="section_form js--section_form" id="contact">
             <div class="row">
                 <h2>Prosím, neváhajte ma kontaktovať.</h2>
             </div>
             <div class="row">
-                <form method="post" action="#" class="contact_form">
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label>Meno</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <input type="text" name="name" id="name" placeholder="Vaše meno" required>
+                    <div class="col span-1-of-2">
+                        <div class="contact_information">
+                            <h3>Kontakt</h3>
+                            <div class="address">
+                                <p>Konrádova 4/2<br>Spišská Nová Ves<br>052 01<br>IČO: 40358241<br>IBAN SK09 0900 0000 0050 4317 4177</p>
+                            </div>
+                            <div class="phone_number">
+                                <i class="ion-ios-telephone icon_small"></i>
+                                +421 904 555 555
+                            </div>
+                        
+                            <div class="email_address">
+                                <i class="ion-ios-email icon_small"></i>
+                                tomas.skovran@gmail.com
+                            </div>
+                            <div class="facebook_icon icon_small">
+                                <i class="ion-social-facebook icon_small"></i>
+                                <a href="https://www.facebook.com/Tomi-interier-659260180876479/" target="_blank" class="facebook_link"> Tomi Interier </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label>Telefón</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <input type="number" name="telefon" id="telefon" placeholder="Vaše tel. číslo">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label>Email</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <input type="email" name="email" id="email" placeholder="Váš email" required>
-                        </div>
-                    </div>
-                        <div class="row">
-                            <div class="col span-1-of-3">
-                                <label>Čo potrebujete vyrobiť?</label>
+                <div class="row">
+                    <div class="col span-1-of-2">
+                        <form method="post" action="#" class="contact_form">
+                            <div class="row row_form">
+                                <input type="text" name="name" id="name" placeholder="Vaše meno" required>  
                             </div>
-                            <div class="col span-2-of-3">
-                                <select name="vyroba" id="vyroba" required>
-                                    <option value="Kuchynska_linka">Kuchynskú linku</option>
-                                    <option value="Vstavana_skrina">Vstavanú Skrinu</option>
-                                    <option value="Kupelna">Nábytok do kúpeľne</option>
-                                    <option value="Komoda">Komodu</option>
-                                    <option value="Ine">Iné</option>
-                                </select>
+                            <div class="row row_form">
+                                <input type="number" name="telefon" id="telefon" placeholder="Vaše tel. číslo">  
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col span-1-of-3">
-                                <label>Napíšte mi</label>
+                            <div class="row row_form">
+                                <input type="email" name="email" id="email" placeholder="Váš email" required> 
                             </div>
-                            <div class="col span-2-of-3">
-                                <textarea name="sprava" placeholder="Váša správa"></textarea>
+                                <div class="row row_form">
+                                    <select name="vyroba" id="vyroba" required>
+                                        <option value="" default selected>Čo potrebujete vyrobiť?</option>
+                                        <option value="Kuchynska_linka">Kuchynskú linku</option>
+                                        <option value="Vstavana_skrina">Vstavanú skrinu</option>
+                                        <option value="Kupelna">Nábytok do kúpeľne</option>
+                                        <option value="Komoda">Komodu</option>
+                                        <option value="Poste">Posteľ</option>
+                                        <option value="Ine">Iné</option>
+                                    </select>
+                                </div>
+                                <div class="row row_form">
+                                    <textarea name="sprava" placeholder="Váša správa"></textarea>
+                                </div>
+                            <div class="row row_form">
+                                <input type="submit" value="Odoslať!">
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col span-1-of-3">
-                                <label>&nbsp;</label>
-                            </div>
-                        <div class="col span-2-of-3">
-                            <input type="submit" value="Odoslať!">
-                        </div>
-                    </div>
-                </form>
+                        </form>
+                     </div>
+                </div>
             </div>
         </section>
+        
         <footer>
             <div class="row">
                 <div class="col span-1-of-2">
                     <ul class="footer_nav">
-                        <li><a href="#">Domov<i class="#"></i></a></li>
-                        <li><a href="#">O mne<i class="#"></i></a></li>
-                        <li><a href="#">Viac<i class="#"></i></a></li>
-                        <li><a href="#">Kontakt<i class="#"></i></a></li>
+                        <li><a href="#header">Domov</a></li>
+                        <li><a href="#about_me">O mne</a></li>
+                        <li><a href="#production">Výroba</a></li>
+                        <li><a href="#contact">Kontakt</a></li>
                     </ul>
                 </div>
                 <div class="col span-1-of-2">
                     <ul class="social_links">
-                        <li><a href="https://www.facebook.com/Tomi-interier-659260180876479/"><i class="ion-social-facebook"></i></a></li>
-                        <li><a href="#"><i class="ion-social-google"></i></a></li>
+                        <li><a href="https://www.facebook.com/Tomi-interier-659260180876479/" target="_blank"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="mailto:tomas.skovran@gmail.com" target="_top"><i class="ion-social-google"></i></a></li>
                         <li><a href="#"><i class="ion-social-skype"></i></a></li>
-                        <li><a href="#"><i class="ion-social-pinterest"></i></a></li>
+                        <li><a href="https://www.instagram.com/tomi_interier/" target="_blank"><i class="ion-social-instagram"></i></a></li>
                     </ul>
                 </div>
             </div>

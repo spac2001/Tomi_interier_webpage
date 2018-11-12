@@ -45,7 +45,7 @@ h1 {
     color: #fff;
     font-weight: 300;
     margin-top: 0;
-    margin-bottom; 20px;
+    margin-bottom 20px;
     font-size: 240%;
     word-spacing: 4px;
     letter-spacing: 1px;
@@ -88,12 +88,22 @@ h3 {
     margin-bottom: 10px;
 }
 
+.icon_small {
+    font-size: 130%;
+    color: #e67e22;
+    display: inline-block;
+    margin-right: 15px;
+    vertical-align: middle;
+    
+}
+
+
 /*----------------------------------------- */
 /* HEADER */
 /*------------------------------------------*/
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/wood.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/wood-4.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -106,6 +116,22 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%)
+}
+
+.logo {
+    height: 120px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+    margin-left: -40px;
+}
+
+.logo-black {
+    display: none;
+    height: 60px;
+    width: auto;
+    float: left;
+    margin: px 0px;
 }
 
 /* Main Nav */
@@ -137,6 +163,20 @@ header {
     border-bottom: 2px solid #e67e22;
 }
 
+/* Mobil nav */
+
+.mobil_nav_icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobil_nav_icon i {
+    font-size: 200%;
+    color: #fff;
+}
+
 /* Sticky Nav */
 
 .sticky {
@@ -159,6 +199,9 @@ header {
     padding: 17px 0;
     color: #555;
 }
+
+.sticky .logo { display: none;}
+.sticky .logo-black { display: block;}
 
 /* Buttons */
 
@@ -207,6 +250,8 @@ input[type=submit]:active {
     color: #fff;
 }
 
+
+
 .tomas_foto img {
     height: 180px;
     border-radius: 50%;
@@ -226,6 +271,26 @@ input[type=submit]:active {
     margin: 30px 0;
     margin-bottom: 60px;
     font-size: 120%;
+}
+
+.instagram {
+    text-align: center;
+    font-size: 300%;   
+}
+
+.ion-social-instagram {
+    color:#888; 
+}
+
+.ion-social-instagram:link,
+.ion-social-instagram:visited {
+    color:#888; 
+}
+
+
+.ion-social-instagram:hover,
+.ion-social-instagram:active {
+    color: #e67e22;
 }
 
 /*----------------------------------------- */
@@ -273,7 +338,7 @@ input[type=submit]:active {
 /*------------------------------------------*/
 
 .section_testimonials {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/workbanch.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/kitchen-2.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -321,12 +386,12 @@ cite img {
 
 
 .box {
-    padding: 2% 6%;
+    padding: 2% 0%;
     text-align: center;
 }
 
-. box p {
-    font-size: 90%;
+.box p {
+    font-size: 80%;
     line-height: 145%;
 }
 
@@ -334,9 +399,53 @@ cite img {
 /* FORM */
 /*------------------------------------------*/
 
+
+.row_form {
+    padding: 2% 0;
+}
+
+.contact_information {
+    display: inline-block;
+    margin: 40px auto;   
+}
+
+.contact_information .ion-social-facebook {
+    color: #e67e22;
+}
+
+.contact_information .ion-social-facebook:hover {
+    color: #e67e22;
+}
+
+.address {
+    margin-top: 10px;
+    line-height: 150%;
+}
+
+.phone_number {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.facebook_icon {
+    margin-top: 20px;
+    transition: none;
+}
+
+.facebook_link {
+    text-decoration: none;
+    color: #5f5f5f;
+    font-size: 75%;
+    margin-left: 6px;
+}
+
 .contact_form {
-    width: 60%;
-    margin: 40px auto 0px auto;
+    display: inline-block;
+    float: right;
+    width: 80%;
+    margin: 40px auto 40px auto;
 }
 
 input[type=text],
@@ -345,7 +454,7 @@ input[type=number],
 select,
 textarea {
     width: 100%;
-    padding: 7px;
+    padding: 10px;
     border-radius: 3px;
     border: 1px solid #ccc;
 }
@@ -353,6 +462,12 @@ textarea {
 textarea {
     height: 100px;
 }
+
+option[default] {
+    display: none;
+}
+
+
 
 /*----------------------------------------- */
 /* FOOTER*/
@@ -409,7 +524,7 @@ footer {
 .ion-social-facebook,
 .ion-social-google,
 .ion-social-skype,
-.ion-social-pinterest {
+.ion-social-instagram {
     transition: color 0.2s;
 }
 
@@ -425,12 +540,22 @@ footer {
     color: #00aff0;
 }
 
-.ion-social-pinterest:hover {
-    color: #cb2027;
+.ion-social-instagram:hover {
+    color: #bc2a8d;
 }
 
 footer p {
     color: #888;
     text-align: center;
     margin-top: 20px;
+}
+
+/* Animations */
+
+.js--wp-1 {
+    opacity: 0;
+}
+
+.js--wp-1.animated {
+    opacity: 1;
 }
